@@ -1,0 +1,37 @@
+{
+  "name": "microserviceboilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "./node_modules/eslint/bin/eslint.js . --format table",
+    "start": "node ./bootstrap-service.js",
+    "unit-test": "./node_modules/mocha/bin/mocha ./tests/units/*.js --watch"
+  },
+  "dependencies": {
+    "algoliasearch": "3.20.3",
+    "async": "2.1.4",
+    "bluebird": "^3.4.7",
+    "body-parser": "1.15.2",
+    "compression": "1.6.2",
+    "dotenv": "2.0.0",
+    "eslint": "3.13.0",
+    "eslint-config-airbnb-base": "11.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "express": "4.14.0",
+    "helmet": "3.3.0",
+    "lodash": "4.17.4",
+    "mongoose": "4.8.1",
+    "mongoose-validator": "1.2.5",
+    "mysql": "2.12.0",
+    "q": "1.4.1",
+    "request": "2.79.0",
+    "winston": "2.3.0",
+    "winston-daily-rotate-file": "1.4.2"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0",
+    "chai-http": "3.0.0",
+    "mocha": "3.2.0"
+  }
+}
